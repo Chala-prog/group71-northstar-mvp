@@ -1,0 +1,15 @@
+# OS Metadata Files
+.DS_Store
+Thumbs.db
+
+# Editor & IDE Directories
+.vscode/
+.idea/
+
+# Node / Dependency folders
+node_modules/
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.log
