@@ -1,0 +1,38 @@
+{
+  "ORD-5001": {
+    "orderId": "ORD-5001",
+    "orderStatus": "In Transit",
+    "shippingCarrier": "DHL Express",
+    "estimatedDelivery": "2026-08-18",
+    "returnDetails": {
+      "isEligibleForReturn": true,
+      "returnRequestId": "RET-9901",
+      "returnStatus": "Approved",
+      "refundAmount": 45.00
+    }
+  },
+  "ORD-5002": {
+    "orderId": "ORD-5002",
+    "orderStatus": "Delivered",
+    "shippingCarrier": "FedEx",
+    "estimatedDelivery": "2026-08-10",
+    "returnDetails": {
+      "isEligibleForReturn": false,
+      "returnRequestId": null,
+      "returnStatus": "Not Applicable",
+      "refundAmount": null
+    }
+  },
+  "ORD-5003": {
+    "orderId": "ORD-5003",
+    "orderStatus": "Processing",
+    "shippingCarrier": "USPS",
+    "estimatedDelivery": "2026-08-20",
+    "returnDetails": {
+      "isEligibleForReturn": true,
+      "returnRequestId": "RET-9905",
+      "returnStatus": "Pending Inspection",
+      "refundAmount": 120.50
+    }
+  }
+}
