@@ -1,4 +1,3 @@
-JavaScript
 /**
  * Group 71 - Automated QA Test Suite
  * Author: Member 4
