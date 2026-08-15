@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northstar Retail Co. | Support Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Northstar Self-Serve Customer Dashboard</h1>
+      <p>Check your order status or track returns instantly without opening a ticket.</p>
+    </header>
+
+    <!-- Search Section -->
+    <div class="search-card">
+      <form id="search-form" onsubmit="handleSearch(event)">
+        <div class="form-group">
+          <input type="text" id="order-id-input" placeholder="Enter Order ID (e.g., ORD-5001 or ORD-5002)" required>
+          <button type="submit">Lookup Status</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Error Message -->
+    <div id="error-message" class="error-card">
+      Order ID not found. Please verify your order number and try again.
+    </div>
+
+    <!-- Results Section -->
+    <div id="results" class="results-container">
+
+      <!-- Category 1: Order Status View -->
+      <div class="status-card">
+        <div class="card-header">
+          <h2>📦 Order &amp; Shipping Status</h2>
+          <span id="order-status-badge" class="badge badge-blue">Shipped</span>
+        </div>
+        <div class="grid-details">
+          <div class="detail-item">
+            <p>Order ID</p>
+            <p id="display-order-id">ORD-5001</p>
+          </div>
+          <div class="detail-item">
+            <p>Carrier</p>
+            <p id="display-carrier">DHL Express</p>
+          </div>
+          <div class="detail-item">
+            <p>Estimated Delivery</p>
+            <p id="display-delivery">2026-08-18</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 2: Returns & Refunds View -->
+      <div class="status-card">
+        <div class="card-header">
+          <h2>🔄 Returns &amp; Refunds Status</h2>
+          <span id="return-status-badge" class="badge badge-green">Approved</span>
+        </div>
+        <div class="grid-details">
+          <div class="detail-item">
+            <p>Return Eligible?</p>
+            <p id="display-eligible">Yes</p>
+          </div>
+          <div class="detail-item">
+            <p>Return Request ID</p>
+            <p id="display-return-id">RET-9901</p>
+          </div>
+          <div class="detail-item">
+            <p>Refund Amount</p>
+            <p id="display-refund">$50.00</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="../backend.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>
