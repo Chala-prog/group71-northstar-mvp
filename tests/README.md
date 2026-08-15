@@ -1,4 +1,3 @@
-Markdown
 # 🛍️ Northstar Customer Support Dashboard (MVP)
 
 > **Group 71 Project** | Self-Serve Customer Dashboard
